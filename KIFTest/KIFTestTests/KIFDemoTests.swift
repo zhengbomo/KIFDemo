@@ -45,7 +45,7 @@ class KIFDemoTests: KIFTestCase {
         tester().tapView(withAccessibilityIdentifier: "accessoryView.done")
         
         //系统alert
-        tester().tapView(withAccessibilityIdentifier: "")
+        tester().tapView(withAccessibilityIdentifier: "systemAlert")
         tester().handleSystemAlert()
         
         tester().tapView(withAccessibilityIdentifier: "alertView")
@@ -61,7 +61,6 @@ class KIFDemoTests: KIFTestCase {
         for i in 1...6 {
             tester().tapRow(at: IndexPath(row: i, section: 0), inTableViewWithAccessibilityIdentifier: "tableView")
         }
-        
     }
     
 }
