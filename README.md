@@ -1,2 +1,3 @@
-# KIFDemo
-KIF UI测试范例
+# KIF Cheat Sheet for iOS
+
+

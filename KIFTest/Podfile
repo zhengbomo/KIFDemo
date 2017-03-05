@@ -1,0 +1,13 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+use_frameworks!
+
+target 'KIFTest' do
+    pod 'SVProgressHUD', '~> 2.1.2'
+end
+
+target 'KIFTestTests' do
+    pod 'KIF', '~> 3.5.1'
+end
+
