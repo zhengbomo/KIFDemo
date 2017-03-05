@@ -11,6 +11,7 @@ import KIF
 extension KIFUITestActor {
     
     /// handle多个system alert
+    @discardableResult
     func handleSystemAlert() -> Bool {
         var count = 0
         while acknowledgeSystemAlert() {

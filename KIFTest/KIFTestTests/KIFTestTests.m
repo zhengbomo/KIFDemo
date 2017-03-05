@@ -28,7 +28,7 @@
  
 }
 
-- (void)testSuccessfulLogin
+- (void)testExample
 {
     //输入文本
     UIView *view = [tester waitForViewWithAccessibilityIdentifier:@"textField"];

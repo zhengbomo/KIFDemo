@@ -11,6 +11,8 @@
 		C43980F18A2AAE2F4D22FF6B /* Pods_KIFTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79F5958F5C79976A64DAF5B8 /* Pods_KIFTest.framework */; };
 		F78B91211E6BCB4500E7B81A /* NormalInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = F78B91201E6BCB4500E7B81A /* NormalInputAccessoryView.m */; };
 		F78DEF2E1E6AB5FD008C0ABD /* KIFUITestActor+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78DEF2D1E6AB5FD008C0ABD /* KIFUITestActor+System.swift */; };
+		F79F94A51E6C10210084DEF8 /* KIFDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79F94A41E6C10210084DEF8 /* KIFDemoTests.swift */; };
+		F79F94A71E6C10700084DEF8 /* XCTestCase+Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79F94A61E6C10700084DEF8 /* XCTestCase+Test.swift */; };
 		F7DF212F1E69AF6F00C0BFD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DF212E1E69AF6F00C0BFD4 /* main.m */; };
 		F7DF21321E69AF6F00C0BFD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DF21311E69AF6F00C0BFD4 /* AppDelegate.m */; };
 		F7DF21351E69AF6F00C0BFD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7DF21341E69AF6F00C0BFD4 /* ViewController.m */; };
@@ -44,6 +46,8 @@
 		F78B91201E6BCB4500E7B81A /* NormalInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalInputAccessoryView.m; sourceTree = "<group>"; };
 		F78DEF2D1E6AB5FD008C0ABD /* KIFUITestActor+System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIFUITestActor+System.swift"; sourceTree = "<group>"; };
 		F78DEF301E6AB617008C0ABD /* KIFTestTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KIFTestTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		F79F94A41E6C10210084DEF8 /* KIFDemoTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFDemoTests.swift; sourceTree = "<group>"; };
+		F79F94A61E6C10700084DEF8 /* XCTestCase+Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Test.swift"; sourceTree = "<group>"; };
 		F7DF212A1E69AF6F00C0BFD4 /* KIFTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DF212E1E69AF6F00C0BFD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F7DF21301E69AF6F00C0BFD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +164,7 @@
 			children = (
 				F7DF21521E69B2B400C0BFD4 /* Category */,
 				F7DF21471E69AF6F00C0BFD4 /* KIFTestTests.m */,
+				F79F94A41E6C10210084DEF8 /* KIFDemoTests.swift */,
 				F78DEF301E6AB617008C0ABD /* KIFTestTests-Bridging-Header.h */,
 				F7DF21491E69AF6F00C0BFD4 /* Info.plist */,
 			);
@@ -172,6 +177,7 @@
 				F78DEF2D1E6AB5FD008C0ABD /* KIFUITestActor+System.swift */,
 				F7DF21561E69B51B00C0BFD4 /* KIFUITestActor+Identifier.h */,
 				F7DF21571E69B51B00C0BFD4 /* KIFUITestActor+Identifier.m */,
+				F79F94A61E6C10700084DEF8 /* XCTestCase+Test.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -395,6 +401,8 @@
 				F78DEF2E1E6AB5FD008C0ABD /* KIFUITestActor+System.swift in Sources */,
 				F7DF21581E69B51B00C0BFD4 /* KIFUITestActor+Identifier.m in Sources */,
 				F7DF21481E69AF6F00C0BFD4 /* KIFTestTests.m in Sources */,
+				F79F94A71E6C10700084DEF8 /* XCTestCase+Test.swift in Sources */,
+				F79F94A51E6C10210084DEF8 /* KIFDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
