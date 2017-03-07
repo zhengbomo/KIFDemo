@@ -9,9 +9,25 @@
 import KIF
 
 class KIFDemoTests: KIFTestCase {
+    override func beforeAll() {
+        
+    }
+    
+    override func beforeEach() {
+        
+    }
+    
+    override func afterAll() {
+        
+    }
+    
+    override func afterEach() {
+        
+    }
     
     func testExample() {
         //输入文本
+        
         let _ = tester().waitForView(withAccessibilityIdentifier: "textField");
         
         
@@ -29,7 +45,7 @@ class KIFDemoTests: KIFTestCase {
         Thread.sleep(forTimeInterval: 0.2)
         tester().setValue(0.1, for: slider)
         Thread.sleep(forTimeInterval: 0.2)
-        
+
         tester().setOn(false, forSwitchWithAccessibilityIdentifier: "switch")
         
         //DatePicker
@@ -44,6 +60,7 @@ class KIFDemoTests: KIFTestCase {
         tester().selectPickerViewRow(withTitle: "2", inComponent: 1)
         tester().tapView(withAccessibilityIdentifier: "accessoryView.done")
         
+        
         //系统alert
         tester().tapView(withAccessibilityIdentifier: "systemAlert")
         tester().handleSystemAlert()
@@ -55,12 +72,22 @@ class KIFDemoTests: KIFTestCase {
   
         //点击按钮
         tester().tapView(withAccessibilityIdentifier: "tableView")
+        
+        let tableView = tester().waitForView(withAccessibilityIdentifier: "tableView") as! UITableView
+        let rowCount = tableView.numberOfRows(inSection: 0);
+        let rowIndex = Int(arc4random_uniform(UInt32(rowCount)))
+        tester().tapRow(at: IndexPath(row: rowIndex, section: 0), in: tableView)
+        
 
         //滑动
         tester().swipeView(withAccessibilityIdentifier: "tableView", in: .up)
         for i in 1...6 {
-            tester().tapRow(at: IndexPath(row: i, section: 0), inTableViewWithAccessibilityIdentifier: "tableView")
+            tester().tapRow(at: IndexPath(row: i, section: 2), inTableViewWithAccessibilityIdentifier: "tableView")
         }
+        
+        tester().tapStatusBar()
+        
+        tester().tapScreen(at: CGPoint(x: 200, y: 100))
     }
     
 }
